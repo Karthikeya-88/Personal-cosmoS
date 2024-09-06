@@ -1,0 +1,130 @@
+@media screen and (max-width: 767px) {
+  .book-image {
+    width: 70px;
+    border-radius: 10px;
+  }
+
+  .books-list {
+    background-color: #d9d7f0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .book-title {
+    font-size: 12px;
+    color: #2e2c2c;
+    padding: 4px;
+  }
+
+  .book-author {
+    font-size: smaller;
+    font-weight: bold;
+    color: #6558f3;
+    padding: 4px;
+  }
+
+  .image-popup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .popup-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 80%;
+    color: #000000;
+    padding: 50px;
+    text-align: justify;
+  }
+
+  .trigger-button {
+    background-color: #eaf3ea;
+    border-radius: 14px;
+    color: #4b0082;
+    font-family: "Bree Serif";
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+  }
+
+  .popup-items {
+    color: #000000;
+    font-weight: bold;
+    font-size: small;
+  }
+
+  .span-item {
+    color: #1e1d1d;
+    font-weight: 300;
+    font-size: medium;
+    font-family: "Roboto";
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .book-image {
+    width: 130px;
+    border-radius: 24px;
+    padding: 10px;
+  }
+
+  .books-list {
+    width: 40vw;
+    background-color: #d9d7f0;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .book-title {
+    font-size: 20px;
+    color: #2e2c2c;
+    padding: 10px;
+  }
+
+  .book-author {
+    font-size: 16px;
+    color: #6558f3;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .image-popup {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .trigger-button {
+    background-color: #eaf3ea;
+    border-radius: 14px;
+    color: #4b0082;
+    font-family: "Bree Serif";
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+
+  .popup-container {
+    background-color: #ffffff;
+    border-radius: 40px;
+    width: 80%;
+    color: #000000;
+    padding: 100px;
+    text-align: justify;
+  }
+
+  .popup-items {
+    color: #000000;
+    font-weight: bolder;
+  }
+
+  .span-item {
+    color: #1e1d1d;
+    font-weight: 400;
+    font-family: "Roboto";
+  }
+}
