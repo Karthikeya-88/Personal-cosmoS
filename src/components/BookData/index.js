@@ -10,7 +10,6 @@ const BookData = (props) => (
       const { addCartItem } = value;
       const { bookDetails } = props;
       const {
-        id,
         title,
         author,
         imageUrl,
@@ -29,7 +28,7 @@ const BookData = (props) => (
           <h1 className="book-title">{title}</h1>
           <p className="book-author">{author}</p>
           <div className="image-popup">
-            <img src={imageUrl} alt={id} className="book-image" />
+            <img src={imageUrl} alt={title} className="book-image" />
             <Popup
               modal
               trigger={

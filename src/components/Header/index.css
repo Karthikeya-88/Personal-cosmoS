@@ -12,9 +12,9 @@
   .header-mobileversion-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     align-items: center;
-    padding: 12px;
+    padding: 20px;
     background-color: #14a0c7;
   }
 
