@@ -17,7 +17,7 @@ const About = () => (
           </li>
           <li className="about-li">
             Curated selection of limited fantasy novels for novice readers and
-            Smooth reading experience with concise language and engaging
+            Smooth reading experience with concise language and engaging plot
           </li>
           <li className="about-li">
             Builds confidence in reading and exploring new genres
@@ -26,7 +26,9 @@ const About = () => (
             Introduces readers to the fantasy genre in an approachable way
           </li>
           <li className="about-li">
-            Inspires creativity and imagination through engaging stories -
+            Inspires creativity and imagination through engaging stories
+          </li>
+          <li className="about-li">
             Fosters a deeper connection with the magic of fantasy
           </li>
           <li className="about-li">

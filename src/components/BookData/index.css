@@ -1,10 +1,25 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 576px) {
+  .popup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    border-radius: 40px;
+    width: 80%;
+    color: #000000;
+    padding: 30px;
+    text-align: justify;
+    font-size: xx-small;
+  }
+
   .book-image {
     width: 70px;
     border-radius: 10px;
   }
 
   .books-list {
+    display: flex;
+    flex-direction: column;
     background-color: #d9d7f0;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -30,12 +45,99 @@
     align-items: center;
   }
 
-  .popup-container {
-    background-color: #ffffff;
+  .trigger-button {
+    background-color: #eaf3ea;
+    border-radius: 14px;
+    color: #4b0082;
+    font-family: "Bree Serif";
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+  }
+
+  .popup-items {
+    color: #000000;
+    font-weight: bolder;
+    font-size: small;
+    font-family: "Garamond";
+  }
+
+  .span-item {
+    color: #1e1d1d;
+    font-weight: 200;
+    font-size: x-small;
+    font-family: "Roboto";
+  }
+
+  .order-button {
+    background-color: #eaf3ea;
+    color: #241616;
+    padding: 10px;
+    font-weight: bold;
+    font-family: "Roboto";
+    border-radius: 14px;
+    border: 2px solid #4d41f5;
+    margin: 10px;
+    align-self: center;
+  }
+
+  .close-button {
+    background-color: transparent;
+    border: none;
     border-radius: 20px;
+    color: #181717;
+    font-size: small;
+    align-self: flex-end;
+  }
+
+  .close {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .book-image {
+    width: 70px;
+    border-radius: 10px;
+  }
+
+  .books-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d7f0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .book-title {
+    font-size: 12px;
+    color: #2e2c2c;
+    padding: 4px;
+  }
+
+  .book-author {
+    font-size: smaller;
+    font-weight: bold;
+    color: #6558f3;
+    padding: 4px;
+  }
+
+  .image-popup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .popup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    border-radius: 40px;
     width: 80%;
     color: #000000;
-    padding: 50px;
+    padding: 40px;
     text-align: justify;
   }
 
@@ -53,17 +155,43 @@
     color: #000000;
     font-weight: bold;
     font-size: small;
+    font-family: "Garamond";
   }
 
   .span-item {
     color: #1e1d1d;
     font-weight: 300;
-    font-size: medium;
+    font-size: small;
     font-family: "Roboto";
+  }
+
+  .order-button {
+    background-color: #eaf3ea;
+    color: #241616;
+    padding: 10px;
+    font-weight: bold;
+    font-family: "Roboto";
+    border-radius: 14px;
+    border: 2px solid #4d41f5;
+    margin: 10px;
+    align-self: center;
+  }
+
+  .close-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    color: #181717;
+    font-size: medium;
+    align-self: flex-end;
+  }
+
+  .close {
+    margin: 0px;
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .book-image {
     width: 130px;
     border-radius: 24px;
@@ -76,6 +204,9 @@
     border-radius: 20px;
     margin-bottom: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .book-title {
@@ -93,7 +224,8 @@
 
   .image-popup {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px;
   }
 
   .trigger-button {
@@ -109,22 +241,52 @@
   }
 
   .popup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: #ffffff;
     border-radius: 40px;
     width: 80%;
     color: #000000;
-    padding: 100px;
+    padding: 50px;
     text-align: justify;
   }
 
   .popup-items {
     color: #000000;
     font-weight: bolder;
+    font-size: large;
+    font-family: "Garamond";
   }
 
   .span-item {
     color: #1e1d1d;
-    font-weight: 400;
+    font-weight: 300;
     font-family: "Roboto";
+  }
+
+  .order-button {
+    background-color: #eaf3ea;
+    color: #241616;
+    padding: 12px;
+    font-weight: bold;
+    font-family: "Roboto";
+    border-radius: 14px;
+    border: 2px solid #4d41f5;
+    align-self: center;
+    margin: 20px;
+  }
+
+  .close-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    color: #181717;
+    font-size: x-large;
+    align-self: flex-end;
+  }
+
+  .close {
+    margin: 0px;
   }
 }

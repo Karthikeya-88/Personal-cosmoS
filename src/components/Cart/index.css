@@ -1,0 +1,21 @@
+.cart-list-container {
+  padding: 40px;
+  font-family: "Garamond";
+  display: flex;
+  flex-direction: column;
+}
+
+.order-placed-button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px double #0ed20e;
+  font-family: "Bree Serif";
+  align-self: flex-end;
+}
+
+.order-placed-container {
+  background-color: #161816;
+  color: #ffffff;
+  padding: 8px 20px 8px 20px;
+  border-radius: 20px;
+}

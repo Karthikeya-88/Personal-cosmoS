@@ -14,7 +14,7 @@ class Books extends Component {
   }
 
   getBooks = async () => {
-    const api = "https://run.mocky.io/v3/b761d0c9-6004-4e22-bd00-9a85b08bd7f3";
+    const api = "https://run.mocky.io/v3/87e6ab64-c7f8-4797-9cb3-72947cd625f3";
     const response = await fetch(api);
     const data = await response.json();
     console.log(data);
@@ -35,12 +35,13 @@ class Books extends Component {
     this.setState({ searchInput: event.target.value });
   };
 
-  renderNoBooks = () => (
-    <div>
-      <h1>This is not a huge library</h1>
-      <p>Sorry, No Book found</p>
-    </div>
-  );
+  renderNoBooks = () => {
+    return (
+      <div>
+        <p>Sorry, No Book found</p>
+      </div>
+    );
+  };
 
   render() {
     const { booksData, searchInput, isLoading } = this.state;
@@ -72,9 +73,9 @@ class Books extends Component {
           <ul className="books-unordered-list">
             {booksData
               .filter((each) => {
-                return searchInput.toLowerCase() === ""
-                  ? this.renderNoBooks()
-                  : each.title.toLowerCase().includes(searchInput);
+                return searchInput.toLowerCase() !== ""
+                  ? each.title.toLowerCase().includes(searchInput)
+                  : this.renderNoBooks();
               })
               .map((each) => (
                 <BookData key={each.id} bookDetails={each} />

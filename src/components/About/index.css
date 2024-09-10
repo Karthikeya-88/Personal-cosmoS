@@ -1,12 +1,16 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .about-container {
     background-color: black;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     font-size: smaller;
     align-items: center;
     padding: 20px;
+    background-size: cover;
   }
   .about-header {
     color: #ffffff;
@@ -21,6 +25,7 @@
   .about-li {
     list-style-type: disc;
     text-align: justify;
+    padding: 12px;
   }
 }
 
@@ -29,15 +34,16 @@
     background-color: #000000;
     background-size: cover;
     display: flex;
-    height: 80vh;
+    height: 100vh;
     flex-direction: column;
     font-size: larger;
     align-items: center;
     padding: 20px;
+    background-size: cover;
   }
   .about-header {
     color: #ffffff;
-    font-family: "Bree Serif";
+    font-family: "Garamond";
     font-size: 34px;
   }
   .about-ul {
@@ -46,6 +52,7 @@
     font-size: 24px;
   }
   .about-li {
+    padding: 14px;
     list-style-type: decimal-leading-zero;
     text-align: justify;
   }
