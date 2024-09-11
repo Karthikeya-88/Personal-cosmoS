@@ -41,7 +41,7 @@
 
   .image-popup {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -72,12 +72,13 @@
   .order-button {
     background-color: #eaf3ea;
     color: #241616;
-    padding: 10px;
+    padding: 8px;
     font-weight: bold;
     font-family: "Roboto";
     border-radius: 14px;
     border: 2px solid #4d41f5;
-    margin: 10px;
+    margin: 16px;
+    margin-top: 24px;
     align-self: center;
   }
 
@@ -168,12 +169,13 @@
   .order-button {
     background-color: #eaf3ea;
     color: #241616;
-    padding: 10px;
+    padding: 8px;
     font-weight: bold;
     font-family: "Roboto";
     border-radius: 14px;
     border: 2px solid #4d41f5;
-    margin: 10px;
+    margin: 20px;
+    margin-top: 28px;
     align-self: center;
   }
 
@@ -269,13 +271,14 @@
   .order-button {
     background-color: #eaf3ea;
     color: #241616;
-    padding: 12px;
+    padding: 10px;
     font-weight: bold;
     font-family: "Roboto";
     border-radius: 14px;
     border: 2px solid #4d41f5;
     align-self: center;
-    margin: 20px;
+    margin: 30px;
+    margin-top: 40px;
     text-decoration: none;
   }
 
