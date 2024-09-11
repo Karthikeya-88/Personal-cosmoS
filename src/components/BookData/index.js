@@ -1,5 +1,6 @@
 import CartContext from "../../context/CartContext";
 import Popup from "reactjs-popup";
+import { Link } from "react-router-dom";
 
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import "./index.css";
@@ -67,9 +68,15 @@ const BookData = (props) => (
               )}
             </Popup>
           </div>
-          <button type="button" className="order-button" onClick={onAddtoCart}>
-            Order Novel
-          </button>
+          <Link to="/cart">
+            <button
+              type="button"
+              className="order-button"
+              onClick={onAddtoCart}
+            >
+              Order Novel
+            </button>
+          </Link>
         </li>
       );
     }}

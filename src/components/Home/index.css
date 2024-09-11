@@ -15,14 +15,19 @@
   }
 
   .explore-button {
-    font-size: xx-small;
+    font-size: x-small;
     background-color: #41f17c;
-    color: #610404;
+    color: #400147;
     border-radius: 8px;
     border: none;
-    font-family: "Roboto";
+    font-family: "Perpetua";
+    font-weight: bolder;
     padding: 7px;
     margin: 0px;
+  }
+
+  .home-quote {
+    font-size: large;
   }
 }
 
@@ -43,15 +48,19 @@
   }
 
   .explore-button {
-    font-size: xx-small;
+    font-size: x-small;
     background-color: #41f17c;
-    color: #610404;
+    color: #400147;
     border-radius: 10px;
     border: none;
-    font-family: "Roboto";
+    font-family: "Perpetua";
+    font-weight: bolder;
     padding: 10px;
-    font-weight: bold;
     margin: 0px;
+  }
+
+  .home-quote {
+    font-size: x-large;
   }
 }
 
@@ -72,13 +81,17 @@
 
   .explore-button {
     background-color: #41f17c;
-    color: #610404;
+    color: #400147;
     border-radius: 10px;
     border: none;
     font-size: medium;
     padding: 10px;
-    font-family: "Roboto";
-    font-weight: bold;
+    font-family: "Perpetua";
+    font-weight: bolder;
     margin: 0px;
+  }
+
+  .home-quote {
+    font-size: xx-large;
   }
 }

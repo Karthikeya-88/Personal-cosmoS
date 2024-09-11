@@ -21,17 +21,15 @@
   .header-mobileversion-unorderedlist {
     display: flex;
     padding: 10px;
-    justify-content: space-between;
     align-items: center;
     list-style-type: none;
   }
 
   .nav-item-mobile {
-    color: #f2f2f2;
-    margin-right: 20px;
+    color: #0b0042;
     margin: 0px;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 30px;
     text-decoration: none;
     list-style: none;
     display: flex;
@@ -44,11 +42,20 @@
   }
 
   .nav-bar-icon {
-    width: 24px;
+    width: 36px;
+    height: 20px;
   }
 
   .header-container {
     display: none;
+  }
+
+  .cart-list-badge {
+    padding-left: 1px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 1px;
   }
 }
 
@@ -83,13 +90,22 @@
   }
 
   .header-list-item {
-    color: #f2f2f2;
+    color: #0b0042;
     font-family: "Perpetua";
     margin-right: 28px;
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: none;
     text-align: center;
     display: flex;
     align-items: center;
+  }
+
+  .cart-list-badge {
+    padding-left: 4px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 4px;
   }
 }

@@ -57,16 +57,16 @@
 
   .popup-items {
     color: #000000;
-    font-weight: bolder;
-    font-size: small;
+    font-weight: bold;
+    font-size: x-small;
     font-family: "Garamond";
   }
 
   .span-item {
     color: #000000;
-    font-weight: 300;
+    font-weight: normal;
     font-size: x-small;
-    font-family: "Roboto";
+    font-family: "Garamond";
   }
 
   .order-button {
@@ -162,7 +162,7 @@
     color: #000000;
     font-weight: 300;
     font-size: small;
-    font-family: "Roboto";
+    font-family: "Garamond";
   }
 
   .order-button {
@@ -254,15 +254,16 @@
 
   .popup-items {
     color: #000000;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: large;
     font-family: "Garamond";
   }
 
   .span-item {
-    color: #0e0e0e;
-    font-weight: 400;
-    font-family: "Roboto";
+    color: #000000;
+    font-size: large;
+    font-family: "Garamond";
+    font-weight: normal;
   }
 
   .order-button {
@@ -275,6 +276,7 @@
     border: 2px solid #4d41f5;
     align-self: center;
     margin: 20px;
+    text-decoration: none;
   }
 
   .close-button {
