@@ -36,15 +36,6 @@
   font-size: 16px;
 }
 
-.cart-list-badge {
-  padding-left: 4px;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 16px;
-  padding: 4px;
-  border-radius: 80px;
-}
-
 .remove-button {
   background-color: transparent;
   border: 2px solid #4e4d4d;

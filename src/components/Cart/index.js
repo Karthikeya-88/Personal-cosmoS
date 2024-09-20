@@ -15,8 +15,8 @@ const Cart = () => (
         <>
           <Header />
           {showOrderView ? (
-            <div className="cart-list-container">
-              <h1>Add a novel your Cartlist</h1>
+            <div className="empty-carriage">
+              <h1>Add a novel to your Cartlist</h1>
               <img
                 src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-3428210-2902552.png"
                 alt="empty cart"
@@ -26,6 +26,9 @@ const Cart = () => (
             <div className="cart-list-container">
               <h1>My Books</h1>
               <CartListView />
+              <h1 className="order-total-amount">
+                Your Order Total = {cartList.length * 400}
+              </h1>
               <Popup
                 modal
                 trigger={
@@ -35,7 +38,7 @@ const Cart = () => (
                 }
               >
                 <div className="order-placed-container">
-                  <p>Your order has been placed</p>
+                  <p>Thanks for shopping with us!</p>
                 </div>
               </Popup>
             </div>

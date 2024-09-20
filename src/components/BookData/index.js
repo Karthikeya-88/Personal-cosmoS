@@ -68,15 +68,12 @@ const BookData = (props) => (
               )}
             </Popup>
           </div>
-          <Link to="/cart">
-            <button
-              type="button"
-              className="order-button"
-              onClick={onAddtoCart}
-            >
+
+          <button type="button" className="order-button" onClick={onAddtoCart}>
+            <Link to="/cart" className="order-button-link">
               Order Novel
-            </button>
-          </Link>
+            </Link>
+          </button>
         </li>
       );
     }}

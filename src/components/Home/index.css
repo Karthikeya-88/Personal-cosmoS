@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   .home-header {
     background-image: url("https://res.cloudinary.com/dnmyyqfhs/image/upload/v1725547173/370684750a6a267dd39b96c71f1e51fe_lvkygl.jpg");
     background-size: cover;
@@ -94,4 +94,9 @@
   .home-quote {
     font-size: xx-large;
   }
+}
+
+.explore-button:hover {
+  background-color: #1d0147;
+  color: #fff;
 }

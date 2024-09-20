@@ -1,7 +1,7 @@
 import CartContext from "../../context/CartContext";
 
 import "./index.css";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import { FaHome, FaBook } from "react-icons/fa";
 import { PiShoppingCartFill } from "react-icons/pi";
@@ -32,25 +32,42 @@ const Header = () => {
         </Link>
         <ul className="header-unorderedlist">
           <li>
-            <Link className="header-list-item" to="/">
+            <NavLink
+              className="header-list-item"
+              activeClassName="active"
+              to="/"
+              exact
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="header-list-item" to="/books">
+            <NavLink
+              className="header-list-item"
+              activeClassName="active"
+              to="/books"
+            >
               Books
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="header-list-item" to="/cart">
+            <NavLink
+              className="header-list-item"
+              activeClassName="active"
+              to="/cart"
+            >
               Cart
               {renderCartItem()}
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="header-list-item" to="/about">
+            <NavLink
+              className="header-list-item"
+              activeClassName="active"
+              to="/about"
+            >
               About
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -64,25 +81,42 @@ const Header = () => {
         </Link>
         <ul className="header-mobileversion-unorderedlist">
           <li>
-            <Link to="/" className="nav-item-mobile">
+            <NavLink
+              to="/"
+              className="nav-item-mobile"
+              activeClassName="active"
+              exact
+            >
               <FaHome className="nav-bar-icon" />
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/books" className="nav-item-mobile">
+            <NavLink
+              to="/books"
+              className="nav-item-mobile"
+              activeClassName="active"
+            >
               <FaBook className="nav-bar-icon" />
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/cart" className="nav-item-mobile">
+            <NavLink
+              to="/cart"
+              className="nav-item-mobile"
+              activeClassName="active"
+            >
               <PiShoppingCartFill className="nav-bar-icon" />
               {renderCartItem()}
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about" className="nav-item-mobile">
+            <NavLink
+              to="/about"
+              className="nav-item-mobile"
+              activeClassName="active"
+            >
               <MdContactSupport className="nav-bar-icon" />
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
