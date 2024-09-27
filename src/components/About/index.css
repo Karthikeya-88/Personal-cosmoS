@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .about-container {
     background-image: url("https://res.cloudinary.com/dnmyyqfhs/image/upload/v1726075920/nebulae-cosmic-stars-dark-blue-dark-background-digital-4480x2520-3926_vnifnz.jpg");
     width: 100vw;
@@ -15,19 +15,35 @@
     font-family: "Bree Serif";
     font-size: 30px;
   }
+
   .about-ul {
     color: #ffffff;
     font-family: "Roboto";
     font-size: 16px;
   }
+
+  .linked-in-redirect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    font-weight: bold;
+  }
+
   .about-li {
     list-style-type: disc;
     text-align: justify;
     padding: 12px;
   }
+
+  .redirect-icon {
+    padding: 4px 1px 1px 2px;
+    color: #00ffbf;
+    text-decoration: none;
+  }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .about-container {
     background-image: url("https://res.cloudinary.com/dnmyyqfhs/image/upload/v1726075920/nebulae-cosmic-stars-dark-blue-dark-background-digital-4480x2520-3926_vnifnz.jpg");
     background-size: cover;
@@ -35,7 +51,7 @@
     flex-direction: column;
     font-size: larger;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     background-size: cover;
   }
   .about-header {
@@ -43,14 +59,31 @@
     font-family: "Bree Serif";
     font-size: 34px;
   }
+
   .about-ul {
     color: #e0e1e1;
     font-family: "Roboto";
     font-size: 24px;
   }
+
+  .linked-in-redirect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    font-weight: bold;
+    color: gold;
+  }
+
   .about-li {
     padding: 14px;
     list-style-type: decimal-leading-zero;
     text-align: justify;
+  }
+
+  .redirect-icon {
+    padding: 4px 2px 1px 4px;
+    color: #00ffbf;
+    text-decoration: none;
   }
 }

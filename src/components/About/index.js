@@ -1,4 +1,5 @@
 import Header from "../Header";
+import { IoIosNavigate } from "react-icons/io";
 import "./index.css";
 
 const About = () => (
@@ -8,8 +9,15 @@ const About = () => (
       <div className="about-container">
         <h1 className="about-header">What is Personal Cosmos?</h1>
         <ul className="about-ul">
-          <li className="about-li">
-            Personal Cosmos is a website developed by Doosa Karthikeya
+          <li className="linked-in-redirect">
+            <a
+              href="https://www.linkedin.com/in/karthikeya-doosa-210a42244"
+              className="redirect-icon"
+            >
+              <IoIosNavigate />
+            </a>
+            Karthikeya Doosa is the creator of Personal Cosmos, an innovative
+            web platform.
           </li>
           <li className="about-li">
             Gentle introduction to the fantasy genre - Spark your imagination,

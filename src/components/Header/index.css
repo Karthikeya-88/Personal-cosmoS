@@ -101,11 +101,12 @@
   }
 
   .cart-list-badge {
-    padding: 2px 8px 2px 8px;
+    padding: 1px 6px 1px 6px;
     background-color: #0b0042;
     border-radius: 100px;
-    color: #14a0c7;
-    font-size: 18px;
+    margin-top: 1px;
+    color: #0cb7e6;
+    font-size: 16px;
   }
 }
 

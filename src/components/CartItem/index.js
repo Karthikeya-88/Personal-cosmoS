@@ -17,7 +17,7 @@ const CartItem = (props) => (
         <li className="cart-list-li">
           <img src={imageUrl} alt={title} className="cart-book-img" />
           <h1 className="cart-book-name">{title}</h1>
-          <h1 className="amount">Rs 400 /-</h1>
+          <h1 className="amount">Rs 450 /-</h1>
           <button
             type="button"
             className="remove-button"
