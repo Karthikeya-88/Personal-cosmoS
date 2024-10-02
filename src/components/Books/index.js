@@ -1,4 +1,5 @@
 import { Component } from "react";
+import axios from "axios";
 import { CiSearch } from "react-icons/ci";
 import PuffLoader from "react-spinners/PuffLoader";
 import "./index.css";
@@ -14,14 +15,15 @@ class Books extends Component {
   }
 
   getBooks = async () => {
-    const api = "https://run.mocky.io/v3/9e067edb-0311-4569-820c-4e1d712cc5c3";
+    const api = "https://run.mocky.io/v3/3bc600af-2d55-4538-a5ed-ceaf5b9b85c8";
     const options = {
       method: "GET",
+      timeout: 10000,
     };
     try {
-      const response = await fetch(api, options);
-      if (response.ok) {
-        const data = await response.json();
+      const response = await axios.get(api, options);
+      if (response.status === 200) {
+        const data = await response.data;
         console.log(data);
         const updatedData = data.books.map((each) => ({
           id: each.id,
