@@ -9,7 +9,9 @@
     align-items: center;
     padding: 20px;
     background-size: cover;
+    min-width: 380px;
   }
+
   .about-header {
     color: #ffffff;
     font-family: "Bree Serif";
@@ -18,23 +20,24 @@
 
   .about-ul {
     color: #ffffff;
-    font-family: "Roboto";
-    font-size: 16px;
+    font-family: "Garamond";
+    font-size: 18px;
   }
 
   .linked-in-redirect {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 14px;
-    font-weight: bold;
-    color: gold;
+    padding: 12px;
+    font-weight: bolder;
+    text-align: start;
   }
 
   .about-li {
     list-style-type: disc;
     text-align: justify;
     padding: 12px;
+    text-shadow: 1px 0px #4e4d4d;
   }
 
   .redirect-icon {
@@ -55,6 +58,7 @@
     padding: 30px;
     background-size: cover;
   }
+
   .about-header {
     color: #e0e1e1;
     font-family: "Bree Serif";
@@ -63,8 +67,8 @@
 
   .about-ul {
     color: #e0e1e1;
-    font-family: "Roboto";
-    font-size: 24px;
+    font-family: "Perpetua";
+    font-size: 22px;
   }
 
   .linked-in-redirect {
@@ -72,14 +76,14 @@
     align-items: center;
     justify-content: center;
     padding: 14px;
-    font-weight: bold;
-    color: gold;
+    font-weight: bolder;
   }
 
   .about-li {
     padding: 14px;
     list-style-type: decimal-leading-zero;
     text-align: justify;
+    text-shadow: 1px 0px #4e4d4d;
   }
 
   .redirect-icon {

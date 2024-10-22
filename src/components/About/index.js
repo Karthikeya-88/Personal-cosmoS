@@ -7,7 +7,7 @@ const About = () => (
     <Header />
     <>
       <div className="about-container">
-        <h1 className="about-header">What is Personal Cosmos?</h1>
+        <h2 className="about-header">What is Personal Cosmos?</h2>
         <ul className="about-ul">
           <li className="linked-in-redirect">
             <a

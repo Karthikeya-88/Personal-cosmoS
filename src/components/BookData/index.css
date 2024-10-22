@@ -9,11 +9,17 @@
     color: #000000;
     padding: 30px;
     text-align: justify;
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: calc(50% - 10%);
+    left: calc(50% - 40%);
+    right: calc(50% - 40%);
     font-size: xx-small;
   }
 
   .book-image {
-    width: 70px;
+    width: 60px;
     border-radius: 10px;
   }
 
@@ -27,13 +33,13 @@
   }
 
   .book-title {
-    font-size: 12px;
+    font-size: 14px;
     color: #2e2c2c;
     padding: 4px;
   }
 
   .book-author {
-    font-size: smaller;
+    font-size: 14px;
     font-weight: bold;
     color: #6558f3;
     padding: 4px;
@@ -50,9 +56,10 @@
     border-radius: 14px;
     color: #4b0082;
     font-family: "Bree Serif";
-    font-weight: bold;
+    font-weight: 540;
     border: none;
-    padding: 10px;
+    padding: 8px;
+    font-size: smaller;
   }
 
   .popup-items {
@@ -67,12 +74,13 @@
     font-weight: normal;
     font-size: x-small;
     font-family: "Garamond";
+    text-align: start;
   }
 
   .order-button {
     background-color: #eaf3ea;
-    padding: 8px;
-    font-weight: bold;
+    padding: 6px;
+    font-weight: 600px;
     font-family: "Garamond";
     border-radius: 14px;
     border: 2px solid #4d41f5;
@@ -102,7 +110,7 @@
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .book-image {
-    width: 70px;
+    width: 80px;
     border-radius: 10px;
   }
 
@@ -113,16 +121,17 @@
     margin-bottom: 20px;
     border-radius: 20px;
     padding: 20px;
+    min-width: 340px;
   }
 
   .book-title {
-    font-size: 12px;
+    font-size: 16px;
     color: #2e2c2c;
     padding: 4px;
   }
 
   .book-author {
-    font-size: smaller;
+    font-size: 16px;
     font-weight: bold;
     color: #6558f3;
     padding: 4px;
@@ -144,6 +153,12 @@
     color: #000000;
     padding: 40px;
     text-align: justify;
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: calc(50% - 10%);
+    left: calc(50% - 40%);
+    right: calc(50% - 40%);
   }
 
   .trigger-button {
@@ -153,7 +168,7 @@
     font-family: "Bree Serif";
     font-weight: bold;
     border: none;
-    padding: 10px;
+    padding: 8px;
   }
 
   .popup-items {
@@ -168,6 +183,7 @@
     font-weight: 300;
     font-size: small;
     font-family: "Garamond";
+    text-align: start;
   }
 
   .order-button {
@@ -202,7 +218,7 @@
 
 @media screen and (min-width: 768px) {
   .book-image {
-    width: 130px;
+    width: 120px;
     border-radius: 24px;
     padding: 10px;
   }
@@ -244,7 +260,7 @@
     font-family: "Bree Serif";
     font-weight: bold;
     border: none;
-    padding: 12px;
+    padding: 10px;
     justify-self: flex-end;
     align-self: flex-end;
   }
@@ -259,6 +275,12 @@
     color: #000000;
     padding: 50px;
     text-align: justify;
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: calc(50% - 10%);
+    left: calc(50% - 40%);
+    right: calc(50% - 40%);
   }
 
   .popup-items {
@@ -273,6 +295,7 @@
     font-size: large;
     font-family: "Garamond";
     font-weight: normal;
+    text-align: justify;
   }
 
   .order-button {
@@ -307,11 +330,11 @@
 }
 
 .trigger-button:hover {
-  background-color: #4b0082;
-  color: #fff;
+  background-color: #293448;
+  color: #d4f1f9;
 }
 
 .order-button:hover {
-  background-color: #4ffb55;
+  background-color: #98ff98;
   border: 2px double #000000;
 }

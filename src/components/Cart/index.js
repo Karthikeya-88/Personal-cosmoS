@@ -28,9 +28,9 @@ const Cart = () => {
             <Header />
             {showOrderView ? (
               <div className="empty-carriage">
-                <h1 className="empty-cart-header">
+                <h3 className="empty-cart-header">
                   Add a novel to your Cartlist
-                </h1>
+                </h3>
                 <img
                   src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-3428210-2902552.png"
                   alt="empty cart"
@@ -45,7 +45,7 @@ const Cart = () => {
                 <h1>My Books</h1>
                 <CartListView />
                 <h1 className="order-total-amount">
-                  Your Order Total = {cartList.length * 450}
+                  Your Order Total: {cartList.length * 450} /-
                 </h1>
                 <Popup
                   modal

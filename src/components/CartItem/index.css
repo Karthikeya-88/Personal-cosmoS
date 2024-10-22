@@ -6,7 +6,6 @@
     align-items: center;
     padding: 30px;
     margin: 10px;
-    background-color: #d4d3d3;
     border-radius: 30px;
   }
 }
@@ -17,13 +16,13 @@
   align-items: center;
   padding: 30px;
   margin: 10px;
-  background-color: #d4d3d3;
+  background-color: #cfeedc;
   border-radius: 30px;
+  color: #654c61;
 }
 
 .cart-book-name {
   font-size: 20px;
-  color: #0e0e0e;
   padding: 10px;
 }
 
@@ -33,7 +32,8 @@
 }
 
 .amount {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .remove-button {

@@ -1,6 +1,7 @@
 import { Component } from "react";
 import axios from "axios";
 import { CiSearch } from "react-icons/ci";
+import { GrAscend, GrDescend } from "react-icons/gr";
 import PuffLoader from "react-spinners/PuffLoader";
 import "./index.css";
 
@@ -15,7 +16,7 @@ class Books extends Component {
   }
 
   getBooks = async () => {
-    const api = "https://run.mocky.io/v3/c14b9878-df3c-4173-a944-61d1cc4ee9cc";
+    const api = "https://run.mocky.io/v3/e424db74-d880-4969-9f92-7152cdd888e2";
     const options = {
       method: "GET",
       timeout: 10000,
@@ -48,6 +49,24 @@ class Books extends Component {
     this.setState({ searchInput: event.target.value });
   };
 
+  sortAscending = () => {
+    const { booksData } = this.state;
+    this.setState({
+      booksData: booksData
+        .slice()
+        .sort((a, b) => a.title.localeCompare(b.title)),
+    });
+  };
+
+  sortDescending = () => {
+    const { booksData } = this.state;
+    this.setState({
+      booksData: booksData
+        .slice()
+        .sort((b, a) => a.title.localeCompare(b.title)),
+    });
+  };
+
   renderNoBooks = () => (
     <div>
       <p>Sorry, No Book found</p>
@@ -61,14 +80,35 @@ class Books extends Component {
       <>
         <Header />
         <div className="books-input">
-          <input
-            type="search"
-            placeholder="Search"
-            value={searchInput}
-            onChange={this.onChangeSearch}
+          <div>
+            <button
+              type="button"
+              className="asc-button"
+              onClick={this.sortAscending}
+            >
+              <GrAscend />
+            </button>
+            <button
+              type="button"
+              className="asc-button"
+              onClick={this.sortDescending}
+            >
+              <GrDescend />
+            </button>
+          </div>
+          <form
             className="search-bar"
-          />
-          <CiSearch />
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <input
+              type="search"
+              placeholder="Search"
+              value={searchInput}
+              onChange={this.onChangeSearch}
+              style={{ border: "0" }}
+            />
+            <CiSearch style={{ fontSize: "medium" }} />
+          </form>
         </div>
         {isLoading ? (
           <div className="loader-spinner">
