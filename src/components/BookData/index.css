@@ -16,6 +16,7 @@
     left: calc(50% - 40%);
     right: calc(50% - 40%);
     font-size: xx-small;
+    animation: slideUp 2400ms;
   }
 
   .book-image {
@@ -159,6 +160,7 @@
     top: calc(50% - 10%);
     left: calc(50% - 40%);
     right: calc(50% - 40%);
+    animation: slideUp 3200ms;
   }
 
   .trigger-button {
@@ -281,6 +283,7 @@
     top: calc(50% - 10%);
     left: calc(50% - 40%);
     right: calc(50% - 40%);
+    animation: slideUp 2400ms;
   }
 
   .popup-items {
@@ -337,4 +340,14 @@
 .order-button:hover {
   background-color: #98ff98;
   border: 2px double #000000;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

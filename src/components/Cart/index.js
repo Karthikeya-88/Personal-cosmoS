@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../Header";
 import Popup from "reactjs-popup";
@@ -8,14 +8,7 @@ import CartListView from "../CartListView";
 import "./index.css";
 
 const Cart = () => {
-  const [showMessage, setShowMsg] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowMsg(false);
-    }, 3400);
-    return () => clearTimeout(timer);
-  }, [showMessage]);
+  const [showMessage] = useState(true);
 
   return (
     <CartContext.Consumer>
@@ -57,7 +50,10 @@ const Cart = () => {
                 >
                   {showMessage && (
                     <div className="order-placed-container">
-                      <p>Thanks for shopping with us!</p>
+                      <p>
+                        Thanks for shopping with us! <br />
+                        Your support is very much appreciated
+                      </p>
                     </div>
                   )}
                 </Popup>
