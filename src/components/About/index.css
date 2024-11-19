@@ -1,0 +1,95 @@
+@media screen and (max-width: 768px) {
+  .about-container {
+    background-image: url("https://res.cloudinary.com/dnmyyqfhs/image/upload/v1726075920/nebulae-cosmic-stars-dark-blue-dark-background-digital-4480x2520-3926_vnifnz.jpg");
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+    align-items: center;
+    padding: 20px;
+    min-width: 380px;
+    background-size: cover;
+  }
+
+  .about-header {
+    color: #ffffff;
+    font-family: "Cambria";
+    font-size: 24px;
+  }
+
+  .about-ul {
+    color: #ffffff;
+    font-family: "Garamond";
+    font-size: 18px;
+  }
+
+  .linked-in-redirect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    font-weight: bolder;
+    text-align: start;
+    font-size: 16px;
+    color: bisque;
+  }
+
+  .about-li {
+    list-style-type: disc;
+    text-align: justify;
+    padding: 12px;
+    text-shadow: 1px 0px #4e4d4d;
+  }
+
+  .redirect-icon {
+    padding: 4px 1px 1px 2px;
+    color: #00ffbf;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    background-image: url("https://res.cloudinary.com/dnmyyqfhs/image/upload/v1726075920/nebulae-cosmic-stars-dark-blue-dark-background-digital-4480x2520-3926_vnifnz.jpg");
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    align-items: center;
+    padding: 48px;
+  }
+
+  .about-header {
+    color: #e0e1e1;
+    font-family: "Bree Serif";
+    font-size: 28px;
+  }
+
+  .about-ul {
+    color: #e0e1e1;
+    font-family: "Perpetua";
+    font-size: 20px;
+  }
+
+  .linked-in-redirect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: bisque;
+  }
+
+  .about-li {
+    padding: 10px;
+    list-style-type: decimal;
+    text-align: justify;
+    text-shadow: 1px 0px #4e4d4d;
+  }
+
+  .redirect-icon {
+    padding: 4px 2px 1px 4px;
+    color: #00ffbf;
+    text-decoration: none;
+  }
+}

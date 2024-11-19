@@ -1,0 +1,185 @@
+@media screen and (max-width: 576px) {
+  .empty-carriage {
+    padding: 10px;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgb(206, 206, 206, 0.2)
+      ),
+      url("https://png.pngtree.com/thumb_back/fh260/background/20231231/pngtree-abstract-background-with-watercolor-texture-in-shades-of-blue-and-orange-image_13899501.png");
+
+    width: 104vw;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .empty-cart-header {
+    font-size: 24px;
+    font-family: "Bree serif";
+    font-weight: bold;
+  }
+
+  .empty-cart-img {
+    width: 320px;
+    height: 220px;
+  }
+
+  .place-an-order-btn {
+    border-radius: 12px;
+    background-color: #3e1600;
+    font-family: "Bree serif";
+    padding: 4px 12px 4px 12px;
+    border: 2px solid transparent;
+    font-size: small;
+    color: #f4cb01;
+    font-style: italic;
+    box-shadow: inset 0px 0px 10px #02314281;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .empty-carriage {
+    padding: 10px;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgb(206, 206, 206, 0.2)
+      ),
+      url("https://png.pngtree.com/thumb_back/fh260/background/20231231/pngtree-abstract-background-with-watercolor-texture-in-shades-of-blue-and-orange-image_13899501.png");
+
+    width: 103vw;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .empty-cart-header {
+    font-size: 24px;
+    font-family: "Bree serif";
+    font-weight: bold;
+  }
+
+  .empty-cart-img {
+    width: 320px;
+    height: 220px;
+  }
+
+  .place-an-order-btn {
+    border-radius: 12px;
+    background-color: #3e1600;
+    font-family: "Bree serif";
+    padding: 4px 12px 4px 12px;
+    border: 2px solid transparent;
+    font-size: small;
+    color: #f4cb01;
+    font-style: italic;
+    box-shadow: inset 0px 0px 10px #02314281;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .empty-carriage {
+    padding: 10px;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgb(206, 206, 206, 0.2)
+      ),
+      url("https://png.pngtree.com/thumb_back/fh260/background/20231231/pngtree-abstract-background-with-watercolor-texture-in-shades-of-blue-and-orange-image_13899501.png");
+
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .empty-cart-header {
+    font-family: "Bree serif";
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .empty-cart-img {
+    width: 440px;
+    height: 360px;
+  }
+
+  .place-an-order-btn {
+    border-radius: 12px;
+    background-color: #3e1600;
+    padding: 4px 12px 4px 12px;
+    font-family: "Bree serif";
+    border: 2px solid transparent;
+    font-size: large;
+    font-style: italic;
+    color: #f4cb01;
+  }
+}
+
+.cart-list-container {
+  padding: 40px;
+  font-family: "Garamond";
+  display: flex;
+  flex-direction: column;
+  min-width: 340px;
+}
+
+.order-total-amount {
+  align-self: center;
+  font-size: larger;
+  font-family: "Caveat";
+  color: rgb(11, 84, 157);
+}
+
+.order-placed-button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px double #0ed20e;
+  font-family: "Garamond";
+  align-self: flex-end;
+}
+
+.order-placed-container {
+  background-color: #c4dbfa;
+  color: #3484f0;
+  padding: 8px 20px 8px 20px;
+  font-weight: 600;
+  box-shadow: inset 0px 0px 20px #fff;
+  border-radius: 20px;
+  animation: fadeOut 4800ms forwards;
+  text-align: center;
+  font-family: "Poppins";
+  position: fixed;
+  top: calc(50% - 8%);
+  left: calc(80% - 60%);
+  right: calc(80% - 60%);
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.place-an-order-link {
+  text-decoration: none;
+}
