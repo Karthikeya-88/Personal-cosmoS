@@ -180,6 +180,10 @@
   }
 }
 
+.place-an-order-btn:hover {
+  box-shadow: inset 0px 0px 4px #c4dbfa;
+}
+
 .place-an-order-link {
   text-decoration: none;
 }

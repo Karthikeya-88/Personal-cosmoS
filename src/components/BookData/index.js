@@ -61,7 +61,14 @@ const BookData = (props) => {
             }}
           >
             <h1 className="book-title">{title}</h1>
-            <p className="book-author">{author}</p>
+            <p className="book-author">
+              <span
+                style={{ color: "#EE161F", textShadow: "0.8px 0px #FFC603" }}
+              >
+                Author -{" "}
+              </span>
+              {author}
+            </p>
             <div className="image-popup">
               <img src={imageUrl} alt={title} className="book-image" />
               <Popup

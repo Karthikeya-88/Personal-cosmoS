@@ -121,7 +121,6 @@
   .order-button:hover {
     background-color: #98ff98;
     border: 2px double #000000;
-    padding: 4px;
   }
 }
 
@@ -246,7 +245,6 @@
   .order-button:hover {
     background-color: #98ff98;
     border: 2px double #000000;
-    padding: 6px;
   }
 }
 
@@ -375,7 +373,6 @@
   .order-button:hover {
     background-color: #98ff98;
     border: 2px double #000000;
-    padding: 8px;
   }
 }
 

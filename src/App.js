@@ -56,6 +56,7 @@ class App extends Component {
             <Route path="/books" element={<Books />} exact />
             <Route path="/about" element={<About />} exact />
             <Route path="/cart" element={<Cart />} exact />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </CartContext.Provider>
