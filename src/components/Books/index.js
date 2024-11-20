@@ -7,16 +7,9 @@ import "./index.css";
 import BookData from "../BookData";
 import Header from "../Header";
 
-const categoriesList = [
-  { id: "FANTASY", displayText: "Fantasy" },
-  { id: "FICTION", displayText: "Fiction" },
-  { id: "BIOGRAPHY", displayText: "Biography" },
-  { id: "ADVENTURE FICTION", displayText: "Adventure fiction" },
-];
 
 class Books extends Component {
   state = {
-    activeCatId: categoriesList[0].id,
     booksData: [],
     searchInput: "",
     isLoading: true,
@@ -28,12 +21,9 @@ class Books extends Component {
 
   getBooks = async () => {
     try {
-      const { activeCatId } = this.state;
       const response = await fetch(
-        `https://pc-backend-mbl7.vercel.app/books?category=${activeCatId}`
+        `https://pc-backend-mbl7.vercel.app/books`
       );
-      const daa = "https://pc-backend-mbl7.vercel.app/books?category";
-      console.log(daa);
       if (response.status === 200) {
         const data = await response.json();
         console.log(data);
@@ -61,10 +51,6 @@ class Books extends Component {
     this.setState({ searchInput: event.target.value });
   };
 
-  onActiveCategory = (event) => {
-    this.setState({ activeCatId: event.target.value }, this.getBooks);
-  };
-
   sortAscending = () => {
     const { booksData } = this.state;
     this.setState({
@@ -90,7 +76,7 @@ class Books extends Component {
   );
 
   render() {
-    const { booksData, searchInput, isLoading, activeCatId } = this.state;
+    const { booksData, searchInput, isLoading } = this.state;
 
     return (
       <>
@@ -112,13 +98,6 @@ class Books extends Component {
               <GrDescend />
             </button>
           </div>
-          <select value={activeCatId} onChange={this.onActiveCategory}>
-            {categoriesList.map((each) => (
-              <option key={each.id} value={each.id}>
-                {each.displayText}
-              </option>
-            ))}
-          </select>
           <div
             className="search-bar"
             style={{ display: "flex", alignItems: "center" }}
